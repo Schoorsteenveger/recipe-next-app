@@ -1,8 +1,8 @@
-export default function AddTopic() {
+export default function EditRecipeForm() {
 	return (
-		<>
-			<form action='/api/recipes' method='post'>
-				<div className='grid grid-cols-6 gap-4 sm:gap-6'>
+		<div className='w-full px-10'>
+			<form className='' action='/api/recipes' method='post'>
+				<div className='grid grid-cols-6 gap-4 sm:gap-6 p-5'>
 					<div className='col-span-6 sm:col-span-4 md:col-span-6 lg:col-span-5 xl:col-span-5  mb-4'>
 						<label
 							htmlFor='recipeName'
@@ -94,18 +94,7 @@ export default function AddTopic() {
 							placeholder='Cooking Time'
 						/>
 					</div>
-					{/* <div className='col-span-6 sm:col-span-3 md:col-span-3  lg:col-span-2 xl:col-span-3  mb-4'>
-							<label for='totalTime' className='block text-gray-700 font-bold mb-2'>
-								Total Time
-							</label>
-							<input
-								type='text'
-								id='totalTime'
-								name='totalTime'
-								className='w-full p-2 border rounded'
-								placeholder='Total Time'
-							/>
-						</div> */}
+
 					<div className='col-span-6 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-3  mb-4'>
 						<label
 							htmlFor='recipeYield'
@@ -202,11 +191,11 @@ export default function AddTopic() {
 						<button
 							type='submit'
 							className='bg-orange-400 font-bold p-2 rounded-[4px] focus:outline-none focus:shadow-outline hover:bg-orange-500 transition-all 1s ease-in-out text-white'>
-							Submit Recipe
+							Update Recipe
 						</button>
 					</div>
 				</div>
 			</form>
-		</>
+		</div>
 	)
 }

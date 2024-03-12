@@ -1,9 +1,13 @@
-import RecipesList from '@/components/RecipesList'
+import RecipesList from '../components/RecipesList'
 
-export default function Home() {
+const Home = () => {
 	return (
 		<>
-			<RecipesList />
+			<div className='flex'>
+				<RecipesList />
+			</div>
 		</>
 	)
 }
+
+export default Home
