@@ -1,4 +1,4 @@
-export default function AddTopic() {
+export default function AddRecipe() {
 	return (
 		<>
 			<form action='/api/recipes' method='post'>
@@ -94,18 +94,7 @@ export default function AddTopic() {
 							placeholder='Cooking Time'
 						/>
 					</div>
-					{/* <div className='col-span-6 sm:col-span-3 md:col-span-3  lg:col-span-2 xl:col-span-3  mb-4'>
-							<label for='totalTime' className='block text-gray-700 font-bold mb-2'>
-								Total Time
-							</label>
-							<input
-								type='text'
-								id='totalTime'
-								name='totalTime'
-								className='w-full p-2 border rounded'
-								placeholder='Total Time'
-							/>
-						</div> */}
+
 					<div className='col-span-6 sm:col-span-3 md:col-span-3 lg:col-span-2 xl:col-span-3  mb-4'>
 						<label
 							htmlFor='recipeYield'

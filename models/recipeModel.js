@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const RecipeSchema = new mongoose.Schema({
   "@context": { type: String, required: true },
   "@type": { type: String, required: true },
-  name: { type: String, required: true },
+  title: { type: String, required: true },
   image: [
     {
       data: { type: Buffer, required: false },

@@ -3,7 +3,7 @@ import * as yup from 'yup';
 const recipeSchema = yup.object().shape({
   '@context': yup.string().required(),
   '@type': yup.string().required(),
-  name: yup.string().required(),
+  title: yup.string().required(),
   image: yup
     .array()
     .of(

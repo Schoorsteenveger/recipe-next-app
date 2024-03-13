@@ -38,6 +38,17 @@
 	span {
 		@apply text-sm;
 	}
+	form {
+		@apply p-2 border rounded;
+	}
+	label {
+		@apply mt-2 ml-2;
+	}
+	input,
+	select,
+	textarea {
+		@apply ml-1 rounded bg-zinc-300 w-full;
+	}
 }
 
 @layer components {

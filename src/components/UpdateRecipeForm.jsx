@@ -1,9 +1,14 @@
-export default function EditRecipeForm() {
+'use client'
+
+import { useRouter } from 'next/navigation'
+import React, { useState } from 'react'
+
+const UpdateRecipeForm = () => {
 	return (
 		<div className='w-full px-10'>
 			<form className='' action='/api/recipes' method='post'>
 				<div className='grid grid-cols-6 gap-4 sm:gap-6 p-5'>
-					<div className='col-span-6 sm:col-span-4 md:col-span-6 lg:col-span-5 xl:col-span-5  mb-4'>
+					<div className='xs:col-span-12 mb-4'>
 						<label
 							htmlFor='recipeName'
 							className='block text-gray-700 font-bold mb-2'>
@@ -199,3 +204,5 @@ export default function EditRecipeForm() {
 		</div>
 	)
 }
+
+export default UpdateRecipeForm

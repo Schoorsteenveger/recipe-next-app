@@ -13,7 +13,7 @@ const Navbar = () => {
 					Pasta Recipe
 				</Link>
 
-				<Link className='bg-white p-2 rounded-[4px]' href={'/addRecipe'}>
+				<Link className='bg-white p-2 rounded-[4px]' href={'/RecipePage/new'}>
 					<FontAwesomeIcon className='icon' icon={faAdd} />
 					Add Recipe
 				</Link>
