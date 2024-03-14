@@ -3,13 +3,13 @@ import RemoveButton from './RemoveButton'
 import { HiPencilAlt } from 'react-icons/hi'
 import Image from 'next/image'
 import { FaHeart } from 'react-icons/fa'
-import RatingDisplay from './RatingDisplay'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faClock,
 	faPastafarianism,
 	faPeopleGroup,
 } from '@fortawesome/free-solid-svg-icons'
+import RatingDisplay from './RatingDisplay'
 
 const MockrecipeData = [
 	{
@@ -111,7 +111,7 @@ function RecipeCard() {
 			<div className='flex justify-between my-2 gap-2'>
 				<RemoveButton />
 				<Link href={'/editRecipe/123'}>
-					<HiPencilAlt size={28} />
+					<HiPencilAlt size={28} className=' hover:text-neutral-400' />
 				</Link>
 			</div>
 		</div>

@@ -20,14 +20,12 @@ const Navbar = () => {
 			</div>
 
 			<div className='flex gap-2'>
-				<div className='relative flex items-center'>
-					<FontAwesomeIcon className='icon absolute left-0' icon={faSearch} />
-					<input
-						type='search'
-						name='search'
-						id='search'
-						className='h-full w-full'
+				<div className='flex items-center relative'>
+					<FontAwesomeIcon
+						className='icon absolute left-0 px-2'
+						icon={faSearch}
 					/>
+					<input type='search' name='search' id='search' />
 				</div>
 
 				<Link className='bg-green-200 p-2 rounded-[4px]' href={'/'}>

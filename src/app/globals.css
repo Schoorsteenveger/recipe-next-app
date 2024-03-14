@@ -42,12 +42,15 @@
 		@apply p-2 border rounded;
 	}
 	label {
-		@apply mt-2 ml-2;
+		@apply mb-2 mt-2 ml-2 block text-gray-700 font-bold;
+	}
+	textarea {
+		@apply w-full h-full p-2;
 	}
 	input,
 	select,
 	textarea {
-		@apply ml-1 rounded bg-zinc-300 w-full;
+		@apply ml-1 border rounded bg-zinc-300 w-full p-2;
 	}
 }
 

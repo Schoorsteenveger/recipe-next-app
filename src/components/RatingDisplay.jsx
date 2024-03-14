@@ -1,15 +1,18 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+'use client'
 import React from 'react'
+import { Rating } from 'react-custom-rating-component'
 
 function RatingDisplay() {
 	return (
-		<div className='mb-2 cursor-pointer'>
-			<FontAwesomeIcon icon={faStar} />
-			<FontAwesomeIcon icon={faStar} />
-			<FontAwesomeIcon icon={faStar} />
-			<FontAwesomeIcon icon={faStar} />
-			<FontAwesomeIcon icon={faStar} />
+		<div className='flex justify-start align-center mb-2'>
+			<Rating
+				defaultValue={2.5}
+				size='24px'
+				spacing='10px'
+				activeColor='#ffb700'
+				onChange={(newRating) => console.log('newRating', newRating)}
+				onHover={(hoveredRating) => console.log('hoveredRating', hoveredRating)}
+			/>
 		</div>
 	)
 }
